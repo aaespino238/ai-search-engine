@@ -105,8 +105,7 @@ export const scrapeURL = async(url: string): Promise<string> => {
         
         // Set a realistic user agent
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
-        console.log("SMART_PROXY_USERNAME: ", SMART_PROXY_USERNAME)
-        console.log("SMART_PROXY_PASSWORD: ", SMART_PROXY_PASSWORD)
+
         await page.authenticate({ 
             username: SMART_PROXY_USERNAME, 
             password: SMART_PROXY_PASSWORD.trim()
